@@ -16,7 +16,7 @@ const mainController = {
             //! instance de l' API de google sheets 
             const googleSheets = google.sheets({ version: "v4", auth: client });
 
-            const spreadsheetId = "10T66cilbp1GUN8-xwFbjcPmDbXbtKftnfoAEVYp_Wvk";
+            const spreadsheetId = process.env.spreadsheetId;
 
             //! données a mettre dans la feuille de calcul
             //! https://docs.google.com/spreadsheets/d/(spreadsheet => 10T66cilbp1GUN8-xwFbjcPmDbXbtKftnfoAEVYp_Wvk(<= spreadsheet)/edit#gid=0
